@@ -1,0 +1,8 @@
+# Build outputs (CI fails if executables are committed)
+build*/
+*.o
+*.a
+*.out.bin
+*.gcda
+*.gcno
+*.info
