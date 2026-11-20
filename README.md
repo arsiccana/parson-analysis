@@ -28,11 +28,49 @@ git clone --recurse-submodules https://github.com/arsiccana/parson-analysis.git
 
 | Tool | Directory | Description |
 |------|-----------|-------------|
-| Unit tests + lcov | `unit_tests/` | TODO |
+| Unit tests(Criterion) + lcov | `unit_tests/` | 	30 unit tests for parsing, building/modifying values and serialization, with line, function and branch coverage measured by lcov |
 | Valgrind Memcheck | `valgrind/` | TODO |
 | Cppcheck | `cppcheck/` | TODO |
 
-Instructions for reproducing the results of each tool are in its directory.
+## Reproducing the results
+
+Tested on Ubuntu 22.04 with gcc 13.
+
+### Unit tests and coverage
+
+Requirements:
+
+```bash
+sudo apt install build-essential libcriterion-dev lcov
+```
+
+Run:
+
+```bash
+./unit_tests/run_tests.sh
+```
+
+The script compiles `parson.c` with `--coverage`, compiles the tests from `unit_tests/tests/`,
+runs them and generates the coverage report. Results are written to `unit_tests/coverage/`:
+
+- `test_output.txt` - output of the test run
+- `summary.txt` - coverage summary
+- `html/index.html` - detailed HTML coverage report
+
+To run a single test or group after the script has been run once:
+
+```bash
+./unit_tests/build/unit_tests --filter 'parse/number' --verbose
+```
+
+### Valgrind Memcheck
+
+TODO
+
+### Cppcheck
+
+TODO
+
 
 ## Conclusions
 
