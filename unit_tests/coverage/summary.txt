@@ -1,0 +1,5 @@
+Reading tracefile parson.info
+Summary coverage rate:
+  lines......: 70.4% (1129 of 1604 lines)
+  functions..: 76.4% (110 of 144 functions)
+  branches...: 53.0% (536 of 1011 branches)

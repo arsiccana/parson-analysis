@@ -1,0 +1,71 @@
+[----] Criterion v2.4.0
+[====] Running 2 tests from array:
+[====] Running 1 test from dotnotation:
+[====] Running 5 tests from object:
+[====] Running 9 tests from parse:
+[RUN ] array::append_replace_remove
+[RUN ] dotnotation::set_and_get_nested
+[RUN ] array::out_of_bounds
+[RUN ] object::many_keys_force_resize
+[RUN ] object::overwrite_existing_key
+[RUN ] object::missing_key_returns_defaults
+[RUN ] object::set_and_get
+[RUN ] parse::booleans_and_null
+[RUN ] object::remove_and_clear
+[RUN ] parse::array
+[PASS] array::append_replace_remove: (0,00s)
+[PASS] dotnotation::set_and_get_nested: (0,00s)
+[PASS] array::out_of_bounds: (0,00s)
+[PASS] object::overwrite_existing_key: (0,00s)
+[PASS] object::missing_key_returns_defaults: (0,00s)
+[PASS] parse::booleans_and_null: (0,00s)
+[PASS] object::set_and_get: (0,00s)
+[PASS] parse::array: (0,00s)
+[PASS] object::remove_and_clear: (0,00s)
+[PASS] object::many_keys_force_resize: (0,00s)
+[RUN ] parse::negative_number_with_exponent
+[PASS] parse::negative_number_with_exponent: (0,00s)
+[RUN ] parse::number
+[RUN ] parse::object
+[====] Running 3 tests from parse_invalid:
+[PASS] parse::number: (0,01s)
+[RUN ] parse::string
+[RUN ] parse::string_escapes
+[RUN ] parse::unicode_escape
+[====] Running 1 test from parse_nonstandard:
+[PASS] parse::object: (0,01s)
+[RUN ] parse::with_comments
+[====] Running 6 tests from serialize:
+[RUN ] parse_invalid::malformed_inputs_return_null
+[PASS] parse::string: (0,01s)
+[PASS] parse::string_escapes: (0,01s)
+[RUN ] parse_invalid::missing_file
+[PASS] parse::unicode_escape: (0,01s)
+[RUN ] parse_invalid::null_input
+[RUN ] parse_nonstandard::accepts_trailing_comma
+[PASS] parse::with_comments: (0,01s)
+[RUN ] serialize::buffer_too_small_fails
+[PASS] parse_invalid::malformed_inputs_return_null: (0,01s)
+[PASS] parse_invalid::missing_file: (0,01s)
+[RUN ] serialize::compact_object
+[PASS] parse_invalid::null_input: (0,01s)
+[PASS] parse_nonstandard::accepts_trailing_comma: (0,01s)
+[====] Running 1 test from validate:
+[RUN ] serialize::escapes_special_characters
+[PASS] serialize::buffer_too_small_fails: (0,01s)
+[====] Running 2 tests from value:
+[RUN ] serialize::file_roundtrip
+[RUN ] serialize::pretty_object
+[PASS] serialize::compact_object: (0,01s)
+[RUN ] serialize::roundtrip_parse_serialize_parse
+[PASS] serialize::escapes_special_characters: (0,01s)
+[RUN ] validate::matching_and_non_matching_schema
+[PASS] serialize::file_roundtrip: (0,00s)
+[PASS] serialize::pretty_object: (0,00s)
+[PASS] serialize::roundtrip_parse_serialize_parse: (0,00s)
+[PASS] validate::matching_and_non_matching_schema: (0,00s)
+[RUN ] value::deep_copy_is_equal_and_independent
+[PASS] value::deep_copy_is_equal_and_independent: (0,00s)
+[RUN ] value::equals_ignores_key_order
+[PASS] value::equals_ignores_key_order: (0,00s)
+[====] Synthesis: Tested: 30 | Passing: 30 | Failing: 0 | Crashing: 0 
